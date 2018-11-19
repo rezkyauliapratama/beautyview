@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_corner_radius">8dp</dimen>
+    <dimen name="default_padding">4dp</dimen>
+    <dimen name="default_padding_large">8dp</dimen>
+
+    <dimen name="default_elevation">4dp</dimen>
+    <dimen name="default_icon_size">24dp</dimen>
+</resources>

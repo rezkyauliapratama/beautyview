@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--BaseButton custom attributes-->
+    <declare-styleable name="GlobalAttrDeclare">
+        <attr name="ripple_color" format="color"/>
+        <attr name="corner_radius" format="dimension"/>
+        <attr name="background_color" format="color"/>
+        <attr name="icon_left" format="reference"/>
+        <attr name="icon_right" format="reference"/>
+        <attr name="line_color" format="color"/>
+        <attr name="multiple_line" format="boolean"/>
+        <attr name ="ripple_enabled" format="boolean" />
+        <attr name ="text_capital" format="boolean" />
+
+
+    </declare-styleable>
+    <declare-styleable name="BaseButton">
+        <attr name="ripple_color" />
+        <attr name="ripple_enabled" />
+        <attr name="corner_radius" />
+        <attr name="background_color" />
+        <attr name="text_capital" />
+    </declare-styleable>
+
+    <declare-styleable name="BeautyEditText">
+        <attr name="background_color" />
+        <attr name="corner_radius" />
+        <attr name="icon_left" />
+        <attr name="icon_right" />
+        <attr name="line_color" />
+        <attr name="multiple_line" />
+    </declare-styleable>
+
+
+</resources>
