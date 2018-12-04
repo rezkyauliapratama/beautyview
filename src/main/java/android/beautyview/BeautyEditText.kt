@@ -196,8 +196,6 @@ class BeautyEditText : ConstraintLayout{
         layoutImageLeft= view?.findViewById(R.id.layoutImageLeft)
         layoutImageRight= view?.findViewById(R.id.layoutImageRight)
 
-
-
     }
 
     @SuppressLint("CustomViewStyleable")
@@ -225,10 +223,7 @@ class BeautyEditText : ConstraintLayout{
                 false)
         a.recycle()
 
-
     }
-
-
 
     var text:Editable?
         get() = editText?.text
@@ -236,10 +231,26 @@ class BeautyEditText : ConstraintLayout{
             editText?.text = value
         }
 
-    fun addTextChangedListener(textWatcher: TextWatcher){
-        editText?.addTextChangedListener(textWatcher)
+    fun addTextChangedListener(afterTextChangedListener: (String) -> Unit){
+        editText?.afterTextChanged {
+            afterTextChangedListener(it)
+        }
     }
 
+
+    private fun EditText.afterTextChanged(afterTextChanged: (String) -> Unit) {
+        this.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun afterTextChanged(editable: Editable?) {
+                afterTextChanged.invoke(editable.toString())
+            }
+        })
+    }
 /*
     fun stateColor(color: Int): ColorStateList {
         return ColorStateList(arrayOf(intArrayOf()), intArrayOf(color,color,color, color))
