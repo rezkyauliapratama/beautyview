@@ -24,8 +24,7 @@ import androidx.core.content.ContextCompat
 import androidx.constraintlayout.widget.ConstraintLayout
 import android.text.InputType
 import android.view.inputmethod.EditorInfo
-
-
+import java.lang.StringBuilder
 
 
 /**
@@ -178,6 +177,8 @@ class BeautyEditText : ConstraintLayout{
                 it.setHorizontallyScrolling(true)
                 it.setSingleLine(true)
             }
+
+            it.hint = mHints
         }
 
 

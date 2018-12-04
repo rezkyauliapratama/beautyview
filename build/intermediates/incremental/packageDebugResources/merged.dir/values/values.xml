@@ -314,7 +314,7 @@
     <dimen name="default_padding_large">8dp</dimen>
     <string name="Icon">icon</string>
     <string name="app_name">beauty-view</string>
-    <string name="default_hints"/>
+    <string name="default_hints"> </string>
     <string name="input_blank">......</string>
     <style name="Base">Base</style>
     <style name="Base.Widget">Widget</style>
