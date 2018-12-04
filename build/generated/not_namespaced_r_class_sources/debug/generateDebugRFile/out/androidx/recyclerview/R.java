@@ -29,19 +29,19 @@ public final class R {
         public static int fontStyle = 0x7f0400e2;
         public static int fontVariationSettings = 0x7f0400e3;
         public static int fontWeight = 0x7f0400e4;
-        public static int keylines = 0x7f040112;
-        public static int layoutManager = 0x7f040116;
-        public static int layout_anchor = 0x7f040117;
-        public static int layout_anchorGravity = 0x7f040118;
-        public static int layout_behavior = 0x7f040119;
-        public static int layout_dodgeInsetEdges = 0x7f040145;
-        public static int layout_insetEdge = 0x7f04014e;
-        public static int layout_keyline = 0x7f04014f;
-        public static int reverseLayout = 0x7f04018c;
-        public static int spanCount = 0x7f0401a3;
-        public static int stackFromEnd = 0x7f0401a9;
-        public static int statusBarBackground = 0x7f0401af;
-        public static int ttcIndex = 0x7f040212;
+        public static int keylines = 0x7f040113;
+        public static int layoutManager = 0x7f040117;
+        public static int layout_anchor = 0x7f040118;
+        public static int layout_anchorGravity = 0x7f040119;
+        public static int layout_behavior = 0x7f04011a;
+        public static int layout_dodgeInsetEdges = 0x7f040146;
+        public static int layout_insetEdge = 0x7f04014f;
+        public static int layout_keyline = 0x7f040150;
+        public static int reverseLayout = 0x7f04018d;
+        public static int spanCount = 0x7f0401a4;
+        public static int stackFromEnd = 0x7f0401aa;
+        public static int statusBarBackground = 0x7f0401b0;
+        public static int ttcIndex = 0x7f040213;
     }
     public static final class color {
         private color() {}
@@ -157,7 +157,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static int status_bar_notification_info_overflow = 0x7f150039;
+        public static int status_bar_notification_info_overflow = 0x7f15003a;
     }
     public static final class style {
         private style() {}
@@ -178,10 +178,10 @@ public final class R {
         public static int ColorStateListItem_alpha = 0;
         public static int ColorStateListItem_android_alpha = 1;
         public static int ColorStateListItem_android_color = 2;
-        public static int[] CoordinatorLayout = { 0x7f040112, 0x7f0401af };
+        public static int[] CoordinatorLayout = { 0x7f040113, 0x7f0401b0 };
         public static int CoordinatorLayout_keylines = 0;
         public static int CoordinatorLayout_statusBarBackground = 1;
-        public static int[] CoordinatorLayout_Layout = { 0x10100b3, 0x7f040117, 0x7f040118, 0x7f040119, 0x7f040145, 0x7f04014e, 0x7f04014f };
+        public static int[] CoordinatorLayout_Layout = { 0x10100b3, 0x7f040118, 0x7f040119, 0x7f04011a, 0x7f040146, 0x7f04014f, 0x7f040150 };
         public static int CoordinatorLayout_Layout_android_layout_gravity = 0;
         public static int CoordinatorLayout_Layout_layout_anchor = 1;
         public static int CoordinatorLayout_Layout_layout_anchorGravity = 2;
@@ -196,7 +196,7 @@ public final class R {
         public static int FontFamily_fontProviderFetchTimeout = 3;
         public static int FontFamily_fontProviderPackage = 4;
         public static int FontFamily_fontProviderQuery = 5;
-        public static int[] FontFamilyFont = { 0x1010532, 0x101053f, 0x1010570, 0x1010533, 0x101056f, 0x7f0400da, 0x7f0400e2, 0x7f0400e3, 0x7f0400e4, 0x7f040212 };
+        public static int[] FontFamilyFont = { 0x1010532, 0x101053f, 0x1010570, 0x1010533, 0x101056f, 0x7f0400da, 0x7f0400e2, 0x7f0400e3, 0x7f0400e4, 0x7f040213 };
         public static int FontFamilyFont_android_font = 0;
         public static int FontFamilyFont_android_fontStyle = 1;
         public static int FontFamilyFont_android_fontVariationSettings = 2;
@@ -223,7 +223,7 @@ public final class R {
         public static int[] GradientColorItem = { 0x10101a5, 0x1010514 };
         public static int GradientColorItem_android_color = 0;
         public static int GradientColorItem_android_offset = 1;
-        public static int[] RecyclerView = { 0x10100f1, 0x10100c4, 0x7f0400d3, 0x7f0400d4, 0x7f0400d5, 0x7f0400d6, 0x7f0400d7, 0x7f040116, 0x7f04018c, 0x7f0401a3, 0x7f0401a9 };
+        public static int[] RecyclerView = { 0x10100f1, 0x10100c4, 0x7f0400d3, 0x7f0400d4, 0x7f0400d5, 0x7f0400d6, 0x7f0400d7, 0x7f040117, 0x7f04018d, 0x7f0401a4, 0x7f0401aa };
         public static int RecyclerView_android_descendantFocusability = 0;
         public static int RecyclerView_android_orientation = 1;
         public static int RecyclerView_fastScrollEnabled = 2;

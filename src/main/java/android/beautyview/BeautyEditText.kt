@@ -62,6 +62,11 @@ class BeautyEditText : ConstraintLayout{
      */
     private var mMultipleLine: Boolean = false
 
+    /**
+     * Hints for the ediitext
+     */
+    private var mHints: String = ""
+
     var view: View? = null
     var editText: EditText? = null
     var imageViewLeft: ImageView? = null
@@ -211,6 +216,9 @@ class BeautyEditText : ConstraintLayout{
 
         mCornerRadius = a.getDimensionPixelOffset(R.styleable.BeautyEditText_corner_radius,
                 resources.getDimensionPixelSize(R.dimen.default_corner_radius)).toFloat()
+
+        mHints = a.getDimensionPixelOffset(R.styleable.BeautyEditText_hints,
+                R.string.default_hints).toString()
 
         mMultipleLine = a.getBoolean(R.styleable.BeautyEditText_multiple_line,
                 false)

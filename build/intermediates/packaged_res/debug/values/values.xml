@@ -291,6 +291,7 @@
         <attr name="icon_right"/>
         <attr name="line_color"/>
         <attr name="multiple_line"/>
+        <attr name="hints"/>
     </declare-styleable>
     <declare-styleable name="GlobalAttrDeclare">
         <attr format="color" name="ripple_color"/>
@@ -302,6 +303,7 @@
         <attr format="boolean" name="multiple_line"/>
         <attr format="boolean" name="ripple_enabled"/>
         <attr format="boolean" name="text_capital"/>
+        <attr format="string" name="hints"/>
 
 
     </declare-styleable>
@@ -312,6 +314,7 @@
     <dimen name="default_padding_large">8dp</dimen>
     <string name="Icon">icon</string>
     <string name="app_name">beauty-view</string>
+    <string name="default_hints"/>
     <string name="input_blank">......</string>
     <style name="Base">Base</style>
     <style name="Base.Widget">Widget</style>
