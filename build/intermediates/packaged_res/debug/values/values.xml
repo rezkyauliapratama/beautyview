@@ -292,6 +292,7 @@
         <attr name="line_color"/>
         <attr name="multiple_line"/>
         <attr name="hints"/>
+        <attr name="title"/>
     </declare-styleable>
     <declare-styleable name="GlobalAttrDeclare">
         <attr format="color" name="ripple_color"/>
@@ -304,6 +305,7 @@
         <attr format="boolean" name="ripple_enabled"/>
         <attr format="boolean" name="text_capital"/>
         <attr format="string" name="hints"/>
+        <attr format="string" name="title"/>
 
 
     </declare-styleable>
@@ -314,7 +316,7 @@
     <dimen name="default_padding_large">8dp</dimen>
     <string name="Icon">icon</string>
     <string name="app_name">beauty-view</string>
-    <string name="default_hints"> </string>
+    <string name="default_hints"/>
     <string name="input_blank">......</string>
     <style name="Base">Base</style>
     <style name="Base.Widget">Widget</style>
@@ -445,8 +447,51 @@
         <item name="android:textColorHint">@color/colorWhiteTransparent</item>
     </style>
     <style name="TextAppearance">text</style>
+    <style name="TextStyle.AsButton" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="TextStyle.Display1" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="TextStyle.Display2" parent="TextAppearance.AppCompat.Display1">
+
+    </style>
+    <style name="TextStyle.Display3" parent="TextAppearance.AppCompat.Display2">
+
+    </style>
+    <style name="TextStyle.Display4" parent="TextAppearance.AppCompat.Display3">
+
+    </style>
+    <style name="TextStyle.Headline" parent="TextAppearance.AppCompat.Large">
+
+    </style>
+    <style name="TextStyle.Large" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="TextStyle.Medium" parent="TextAppearance.AppCompat.Small">
+
+    </style>
+    <style name="TextStyle.Medium.Inverse" parent="TextAppearance.AppCompat.Small.Inverse">
+
+    </style>
+    <style name="TextStyle.Notification.Medium" parent="TextStyle.Medium">
+
+    </style>
+    <style name="TextStyle.Overflow" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorDanger</item>
+
+    </style>
+    <style name="TextStyle.Small" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="TextStyle.Small.Inverse" parent="TextAppearance.AppCompat.Small.Inverse">
+        <item name="android:textSize">12sp</item>
+    </style>
     <style name="TextView.AsButton" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="TextView.Large.Inverse" parent="TextAppearance.AppCompat.Medium.Inverse">
+        <item name="android:textColor">#000</item>
     </style>
     <style name="ThemeOverlay">base</style>
 </resources>

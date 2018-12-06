@@ -3,6 +3,7 @@ package android.beautyview
 import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.beautyview.basic.EditText
+import android.beautyview.basic.TextView
 import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.Color
@@ -24,13 +25,15 @@ import androidx.core.content.ContextCompat
 import androidx.constraintlayout.widget.ConstraintLayout
 import android.text.InputType
 import android.view.inputmethod.EditorInfo
+import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import java.lang.StringBuilder
 
 
 /**
  * Created by Rezky Aulia Pratama on 28/10/18.
  */
-class BeautyEditText : ConstraintLayout{
+class BeautyEditText : LinearLayout{
 
 
     /**
@@ -66,13 +69,20 @@ class BeautyEditText : ConstraintLayout{
      */
     private var mHints: String = ""
 
+    /**
+     * Title
+     */
+    private var mTitle: String = ""
+
+
     var view: View? = null
     var editText: EditText? = null
     var imageViewLeft: ImageView? = null
     var imageViewRight: ImageView? = null
     var layoutImageRight : FrameLayout ? =null
     var layoutImageLeft : FrameLayout ? =null
-
+    var layout : ConstraintLayout ? =null
+    var textView : TextView?= null
     private val defaultPadding = resources.getDimensionPixelSize(R.dimen.default_padding);
 
 
@@ -125,7 +135,6 @@ class BeautyEditText : ConstraintLayout{
 
         }else{
             layoutImageRight?.visibility = View.GONE
-
         }
 
         val backgroundDrawable = GradientDrawable()
@@ -146,11 +155,12 @@ class BeautyEditText : ConstraintLayout{
 
         stateDrawable.addState(stateFocused,focuseDrawable)
         stateDrawable.addState(stateNormal,backgroundDrawable)
-        this.background = stateDrawable
+        layout?.background = stateDrawable
 
         val edittextLayoutDrawable = GradientDrawable()
         edittextLayoutDrawable.cornerRadius = mCornerRadius
 
+        setTitle(mTitle)
 
         editText?.let{
 
@@ -161,7 +171,6 @@ class BeautyEditText : ConstraintLayout{
                     stateDrawable.state = stateNormal
                 } else {
                     stateDrawable.state = stateFocused
-
                 }
             }
 
@@ -181,8 +190,6 @@ class BeautyEditText : ConstraintLayout{
             it.hint = mHints
         }
 
-
-
     }
 
     private fun initView(context: Context) {
@@ -195,6 +202,8 @@ class BeautyEditText : ConstraintLayout{
         imageViewLeft= view?.findViewById(R.id.imageLeft)
         layoutImageLeft= view?.findViewById(R.id.layoutImageLeft)
         layoutImageRight= view?.findViewById(R.id.layoutImageRight)
+        layout = view?.findViewById(R.id.container_layout)
+        textView = view?.findViewById(R.id.tvTitle)
 
     }
 
@@ -219,8 +228,12 @@ class BeautyEditText : ConstraintLayout{
         mHints = a.getDimensionPixelOffset(R.styleable.BeautyEditText_hints,
                 R.string.default_hints).toString()
 
+        mTitle = a.getDimensionPixelOffset(R.styleable.BeautyEditText_title,
+                R.string.default_hints).toString()
+
         mMultipleLine = a.getBoolean(R.styleable.BeautyEditText_multiple_line,
                 false)
+
         a.recycle()
 
     }
@@ -237,6 +250,13 @@ class BeautyEditText : ConstraintLayout{
         }
     }
 
+    fun setTitle(s : String){
+        textView?.text = s
+        if (s.isNotEmpty())
+            textView?.visibility = View.VISIBLE
+        else
+            textView?.visibility = View.GONE
+    }
 
     private fun EditText.afterTextChanged(afterTextChanged: (String) -> Unit) {
         this.addTextChangedListener(object : TextWatcher {

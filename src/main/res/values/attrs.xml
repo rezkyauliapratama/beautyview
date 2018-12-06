@@ -12,6 +12,7 @@
         <attr name ="ripple_enabled" format="boolean" />
         <attr name ="text_capital" format="boolean" />
         <attr name ="hints" format="string" />
+        <attr name ="title" format="string" />
 
 
     </declare-styleable>
@@ -31,6 +32,7 @@
         <attr name="line_color" />
         <attr name="multiple_line" />
         <attr name="hints" />
+        <attr name="title" />
     </declare-styleable>
 
 
