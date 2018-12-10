@@ -263,10 +263,10 @@ int attr helperTextTextAppearance 0x7f0400ec
 int attr hideMotionSpec 0x7f0400ed
 int attr hideOnContentScroll 0x7f0400ee
 int attr hideOnScroll 0x7f0400ef
-int attr hintAnimationEnabled 0x7f0400f0
-int attr hintEnabled 0x7f0400f1
-int attr hintTextAppearance 0x7f0400f2
-int attr hints 0x7f0400f3
+int attr hint 0x7f0400f0
+int attr hintAnimationEnabled 0x7f0400f1
+int attr hintEnabled 0x7f0400f2
+int attr hintTextAppearance 0x7f0400f3
 int attr homeAsUpIndicator 0x7f0400f4
 int attr homeLayout 0x7f0400f5
 int attr hoveredFocusedTranslationZ 0x7f0400f6
@@ -2478,10 +2478,10 @@ int styleable BaseButton_corner_radius 1
 int styleable BaseButton_ripple_color 2
 int styleable BaseButton_ripple_enabled 3
 int styleable BaseButton_text_capital 4
-int[] styleable BeautyEditText { 0x7f040037, 0x7f0400a8, 0x7f0400f3, 0x7f0400ff, 0x7f040100, 0x7f040157, 0x7f04016d, 0x7f0401ff }
+int[] styleable BeautyEditText { 0x7f040037, 0x7f0400a8, 0x7f0400f0, 0x7f0400ff, 0x7f040100, 0x7f040157, 0x7f04016d, 0x7f0401ff }
 int styleable BeautyEditText_background_color 0
 int styleable BeautyEditText_corner_radius 1
-int styleable BeautyEditText_hints 2
+int styleable BeautyEditText_hint 2
 int styleable BeautyEditText_icon_left 3
 int styleable BeautyEditText_icon_right 4
 int styleable BeautyEditText_line_color 5
@@ -2805,10 +2805,10 @@ int[] styleable ForegroundLinearLayout { 0x1010109, 0x1010200, 0x7f0400e5 }
 int styleable ForegroundLinearLayout_android_foreground 0
 int styleable ForegroundLinearLayout_android_foregroundGravity 1
 int styleable ForegroundLinearLayout_foregroundInsidePadding 2
-int[] styleable GlobalAttrDeclare { 0x7f040037, 0x7f0400a8, 0x7f0400f3, 0x7f0400ff, 0x7f040100, 0x7f040157, 0x7f04016d, 0x7f04018f, 0x7f040190, 0x7f0401f4, 0x7f0401ff }
+int[] styleable GlobalAttrDeclare { 0x7f040037, 0x7f0400a8, 0x7f0400f0, 0x7f0400ff, 0x7f040100, 0x7f040157, 0x7f04016d, 0x7f04018f, 0x7f040190, 0x7f0401f4, 0x7f0401ff }
 int styleable GlobalAttrDeclare_background_color 0
 int styleable GlobalAttrDeclare_corner_radius 1
-int styleable GlobalAttrDeclare_hints 2
+int styleable GlobalAttrDeclare_hint 2
 int styleable GlobalAttrDeclare_icon_left 3
 int styleable GlobalAttrDeclare_icon_right 4
 int styleable GlobalAttrDeclare_line_color 5
@@ -3084,7 +3084,7 @@ int styleable TextAppearance_android_textStyle 9
 int styleable TextAppearance_android_typeface 10
 int styleable TextAppearance_fontFamily 11
 int styleable TextAppearance_textAllCaps 12
-int[] styleable TextInputLayout { 0x1010150, 0x101009a, 0x7f040047, 0x7f040048, 0x7f040049, 0x7f04004a, 0x7f04004b, 0x7f04004c, 0x7f04004d, 0x7f04004e, 0x7f04004f, 0x7f0400a9, 0x7f0400aa, 0x7f0400ab, 0x7f0400ac, 0x7f0400c2, 0x7f0400c3, 0x7f0400ea, 0x7f0400eb, 0x7f0400ec, 0x7f0400f0, 0x7f0400f1, 0x7f0400f2, 0x7f04017b, 0x7f04017c, 0x7f04017d, 0x7f04017e, 0x7f04017f }
+int[] styleable TextInputLayout { 0x1010150, 0x101009a, 0x7f040047, 0x7f040048, 0x7f040049, 0x7f04004a, 0x7f04004b, 0x7f04004c, 0x7f04004d, 0x7f04004e, 0x7f04004f, 0x7f0400a9, 0x7f0400aa, 0x7f0400ab, 0x7f0400ac, 0x7f0400c2, 0x7f0400c3, 0x7f0400ea, 0x7f0400eb, 0x7f0400ec, 0x7f0400f1, 0x7f0400f2, 0x7f0400f3, 0x7f04017b, 0x7f04017c, 0x7f04017d, 0x7f04017e, 0x7f04017f }
 int styleable TextInputLayout_android_hint 0
 int styleable TextInputLayout_android_textColorHint 1
 int styleable TextInputLayout_boxBackgroundColor 2

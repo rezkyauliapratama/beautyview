@@ -2,5 +2,5 @@
     <string name="app_name">beauty-view</string>
     <string name="Icon">icon</string>
     <string name="input_blank">......</string>
-    <string name="default_hints"/>
+    <string name="default_hints" />
 </resources>

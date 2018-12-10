@@ -31,14 +31,14 @@
             android:id="@+id/layoutImageLeft"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/default_padding"
+            android:layout_marginStart="@dimen/default_padding_large"
             android:layout_marginTop="@dimen/default_padding"
             android:layout_marginBottom="@dimen/default_padding"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginLeft="@dimen/default_padding">
+            android:layout_marginLeft="@dimen/default_padding_large">
 
             <ImageView
                 android:id="@+id/imageLeft"
@@ -58,8 +58,8 @@
             app:layout_constraintEnd_toStartOf="@+id/layoutImageRight"
             app:layout_constraintStart_toEndOf="@+id/layoutImageLeft"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_goneMarginRight="@dimen/default_padding_large"
-            app:layout_goneMarginLeft="@dimen/default_padding_large"
+            app:layout_goneMarginRight="@dimen/default_padding_xlarge"
+            app:layout_goneMarginLeft="@dimen/default_padding_xlarge"
             android:textAppearance="@style/TextStyle.Small"/>
 
 
@@ -68,13 +68,13 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/default_padding"
-            android:layout_marginEnd="@dimen/default_padding"
+            android:layout_marginEnd="@dimen/default_padding_large"
             android:layout_marginBottom="@dimen/default_padding"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginRight="@dimen/default_padding">
+            android:layout_marginRight="@dimen/default_padding_large">
 
             <ImageView
                 android:id="@+id/imageRight"

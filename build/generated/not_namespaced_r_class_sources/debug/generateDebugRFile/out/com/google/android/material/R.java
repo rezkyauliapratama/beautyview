@@ -276,9 +276,9 @@ public final class R {
         public static int hideMotionSpec = 0x7f0400ed;
         public static int hideOnContentScroll = 0x7f0400ee;
         public static int hideOnScroll = 0x7f0400ef;
-        public static int hintAnimationEnabled = 0x7f0400f0;
-        public static int hintEnabled = 0x7f0400f1;
-        public static int hintTextAppearance = 0x7f0400f2;
+        public static int hintAnimationEnabled = 0x7f0400f1;
+        public static int hintEnabled = 0x7f0400f2;
+        public static int hintTextAppearance = 0x7f0400f3;
         public static int homeAsUpIndicator = 0x7f0400f4;
         public static int homeLayout = 0x7f0400f5;
         public static int hoveredFocusedTranslationZ = 0x7f0400f6;
@@ -2432,7 +2432,7 @@ public final class R {
         public static int TextAppearance_android_typeface = 10;
         public static int TextAppearance_fontFamily = 11;
         public static int TextAppearance_textAllCaps = 12;
-        public static int[] TextInputLayout = { 0x1010150, 0x101009a, 0x7f040047, 0x7f040048, 0x7f040049, 0x7f04004a, 0x7f04004b, 0x7f04004c, 0x7f04004d, 0x7f04004e, 0x7f04004f, 0x7f0400a9, 0x7f0400aa, 0x7f0400ab, 0x7f0400ac, 0x7f0400c2, 0x7f0400c3, 0x7f0400ea, 0x7f0400eb, 0x7f0400ec, 0x7f0400f0, 0x7f0400f1, 0x7f0400f2, 0x7f04017b, 0x7f04017c, 0x7f04017d, 0x7f04017e, 0x7f04017f };
+        public static int[] TextInputLayout = { 0x1010150, 0x101009a, 0x7f040047, 0x7f040048, 0x7f040049, 0x7f04004a, 0x7f04004b, 0x7f04004c, 0x7f04004d, 0x7f04004e, 0x7f04004f, 0x7f0400a9, 0x7f0400aa, 0x7f0400ab, 0x7f0400ac, 0x7f0400c2, 0x7f0400c3, 0x7f0400ea, 0x7f0400eb, 0x7f0400ec, 0x7f0400f1, 0x7f0400f2, 0x7f0400f3, 0x7f04017b, 0x7f04017c, 0x7f04017d, 0x7f04017e, 0x7f04017f };
         public static int TextInputLayout_android_hint = 0;
         public static int TextInputLayout_android_textColorHint = 1;
         public static int TextInputLayout_boxBackgroundColor = 2;

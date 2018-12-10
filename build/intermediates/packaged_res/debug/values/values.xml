@@ -291,7 +291,7 @@
         <attr name="icon_right"/>
         <attr name="line_color"/>
         <attr name="multiple_line"/>
-        <attr name="hints"/>
+        <attr name="hint"/>
         <attr name="title"/>
     </declare-styleable>
     <declare-styleable name="GlobalAttrDeclare">
@@ -304,7 +304,7 @@
         <attr format="boolean" name="multiple_line"/>
         <attr format="boolean" name="ripple_enabled"/>
         <attr format="boolean" name="text_capital"/>
-        <attr format="string" name="hints"/>
+        <attr format="string" name="hint"/>
         <attr format="string" name="title"/>
 
 

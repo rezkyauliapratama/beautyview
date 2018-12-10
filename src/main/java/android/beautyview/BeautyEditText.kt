@@ -5,13 +5,9 @@ import android.annotation.TargetApi
 import android.beautyview.basic.EditText
 import android.beautyview.basic.TextView
 import android.content.Context
-import android.content.res.ColorStateList
-import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.GradientDrawable
-import android.graphics.drawable.ShapeDrawable
 import android.graphics.drawable.StateListDrawable
-import android.graphics.drawable.shapes.RoundRectShape
 import android.os.Build
 import android.text.Editable
 import android.text.TextWatcher
@@ -26,8 +22,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import android.text.InputType
 import android.view.inputmethod.EditorInfo
 import android.widget.LinearLayout
-import android.widget.RelativeLayout
-import java.lang.StringBuilder
 
 
 /**
@@ -67,12 +61,12 @@ class BeautyEditText : LinearLayout{
     /**
      * Hints for the ediitext
      */
-    private var mHints: String = ""
+    private var mHint: String ?= null
 
     /**
      * Title
      */
-    private var mTitle: String = ""
+    private var mTitle: String ?= null
 
 
     var view: View? = null
@@ -174,7 +168,6 @@ class BeautyEditText : LinearLayout{
                 }
             }
 
-
             if (mMultipleLine){
                 it.imeOptions = EditorInfo.IME_ACTION_DONE
                 it.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
@@ -187,7 +180,8 @@ class BeautyEditText : LinearLayout{
                 it.setSingleLine(true)
             }
 
-            it.hint = mHints
+            it.hint = mHint ?: ""
+
         }
 
     }
@@ -225,11 +219,9 @@ class BeautyEditText : LinearLayout{
         mCornerRadius = a.getDimensionPixelOffset(R.styleable.BeautyEditText_corner_radius,
                 resources.getDimensionPixelSize(R.dimen.default_corner_radius)).toFloat()
 
-        mHints = a.getDimensionPixelOffset(R.styleable.BeautyEditText_hints,
-                R.string.default_hints).toString()
+        mHint = a.getString(R.styleable.BeautyEditText_hint)
 
-        mTitle = a.getDimensionPixelOffset(R.styleable.BeautyEditText_title,
-                R.string.default_hints).toString()
+        mTitle = a.getString(R.styleable.BeautyEditText_title)
 
         mMultipleLine = a.getBoolean(R.styleable.BeautyEditText_multiple_line,
                 false)
@@ -250,12 +242,15 @@ class BeautyEditText : LinearLayout{
         }
     }
 
-    fun setTitle(s : String){
+    fun setTitle(s : String?){
         textView?.text = s
-        if (s.isNotEmpty())
-            textView?.visibility = View.VISIBLE
-        else
+
+        if (s.isNullOrBlank()){
             textView?.visibility = View.GONE
+        }else{
+            textView?.visibility = View.VISIBLE
+        }
+
     }
 
     private fun EditText.afterTextChanged(afterTextChanged: (String) -> Unit) {
